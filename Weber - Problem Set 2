@@ -7,29 +7,31 @@ Wednesday -
 cd ~                    --> change directory to home directory
 mkdir ./problem_set_1   --> make a new directory in the home directory called "problem_set_1"
 touch submission.txt    --> make a new file called "submission.txt" in home directory 
-cd ..                   --> relative path, changes the directory to 2 layers above
-                            prints an error because we are in the home directory which doesn't have 2 layers above it
+cd ..                   --> relative path, changes the directory to 1 layer above which is the Users directory
 pwd                     --> prints working directory
                             prints "/Users/hannahweber" which is the home directory
                             
-#2: 
+#2: help from Jack, helped Taylor
 cd /                    --> changes directory to root directory
 cp ~/config.txt .       --> copies file from home directory called "config.txt" to the current directory which is the root
 mkdir ./preferences     --> creates a new directory in the root called "preferences"
 cd preferences          --> changes the working directory to preferences
-cp ~/prefs.txt .        --> copies file from home directory called "prefs.txt" to preferences directory
-cd ~
-ls                      --> lists the home directory files to check and make sure "config.txt" is still there
-cd /
-ls                      --> lists the root directory files to make sure "config.txt" copied over
+cp ~/preferences/prefs.txt .  --> copies file from home preferences directory called "prefs.txt" to therpreferences directory
+head -n 100 config.txt   --> look at the start and the end of the "prefs.txt" document 
+tail -n 100 config.txt
 
 #3:
 Root - It is important to have a shortcut for root because it is the highest directory and all of the other files on the computer stem from this one and so there needs to be easy access to it.
 Home - There needs to be a shortcut for home because it is an important directory where most of the users files are stored on their computer. 
 Parent - The parent directory is the one stemming directly above the current directory. It is important to have a parent shortcut because when diving into files in a directory it is necessary to have an easy-to-use go back option that will save the user from going through the troubles of using the change directory command again.
 
-#4: 
+#4: help from Jacob
 cd /usrs/INFO 3401/                             --> change the directory to "INFO 3401" which is stored under the parent directory "usrs"
-cd /usrs/INFO 3401/ ./homework/                 --> in the "INFO 3401" directory it will go to the directory titled "homework"
-cd /usrs/INFO 3401/ ./homework/ ./problem1      --> in the "homework" directory it will go to the directory titled "problem1"
-pwd                                             --> it will print the working directory which is /usrs/INFO 3401/homework/problem1
+cd /usrs/INFO 3401/ ../homework/                --> will go back to the "usrs" folder and into the directory titled "homework"
+cd /usrs/INFO 3401/ ../homework/ ./problem1     --> in the "homework" directory it will go to the directory titled "problem1"
+pwd                                             --> it will print the working directory which is /usrs/homework/problem1
+
+#5:
+mv ~/Documents/datafile.csv .       --> move file to the current directory
+cp ~/Documents/datafile.csv .       --> copy the file to the current directory
+rm datafile.csv                     --> remove the datafile.csv that is in the current directory
