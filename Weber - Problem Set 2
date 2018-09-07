@@ -31,7 +31,7 @@ cd /usrs/INFO 3401/ ../homework/                --> will go back to the "usrs" f
 cd /usrs/INFO 3401/ ../homework/ ./problem1     --> in the "homework" directory it will go to the directory titled "problem1"
 pwd                                             --> it will print the working directory which is /usrs/homework/problem1
 
-#5:
-mv ~/Documents/datafile.csv .       --> move file to the current directory
-cp ~/Documents/datafile.csv .       --> copy the file to the current directory
-rm datafile.csv                     --> remove the datafile.csv that is in the current directory
+#5: helped Taylor, help by Jacob
+mv ~/Documents/datafile.csv .               --> move file to the current directory
+cp ~/Documents/datafile.csv .               --> copy the file to the current directory
+cp ./datafile.csv ~/Documents/datafile.csv  --> copy it back
